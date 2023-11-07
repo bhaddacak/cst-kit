@@ -101,6 +101,12 @@
 </p>
 </xsl:template>
 
+<xsl:template match='p[@rend="subgroup"]'>
+<p class="subgroup">
+<xsl:apply-templates/>
+</p>
+</xsl:template>
+
 <xsl:template match='p[@rend="subhead"]'>
 <p class="subhead">
 <xsl:apply-templates/>
