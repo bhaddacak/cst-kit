@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+function validate {
+	# number range, empty parens, empty tags, square brackets
+	grep --color -Hi -e '>[0-9]\{2,4\}-[0-9]<' -e '>[0-9]\{3,4\}-[0-9]\{2\}<' -e '>[0-9]\{4\}-[0-9]\{3\}<' -e '( )' -e '<p rend="[^"]\+"></p>' -e '\(\[\|\]\)' "$1"
+}
+
+if [ -z "$1" ]; then
+	# check entire directory
+	for file in raw/*.xml
+	do
+		validate "$file"
+	done
+elif [ -e "$1" ]; then
+	# check the file specified
+	validate "$1"	
+fi

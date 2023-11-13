@@ -1,0 +1,1454 @@
+[
+ {
+  "file": "cst-s-d1",
+  "name": "1. Brahmajālasuttaṃ",
+  "number": 1,
+  "paranum": [ 1, 149 ]
+ },
+ {
+  "file": "cst-s-d1",
+  "name": "2. Sāmaññaphalasuttaṃ",
+  "number": 2,
+  "paranum": [ 150, 253 ]
+ },
+ {
+  "file": "cst-s-d1",
+  "name": "3. Ambaṭṭhasuttaṃ",
+  "number": 3,
+  "paranum": [ 254, 299 ]
+ },
+ {
+  "file": "cst-s-d1",
+  "name": "4. Soṇadaṇḍasuttaṃ",
+  "number": 4,
+  "paranum": [ 300, 322 ]
+ },
+ {
+  "file": "cst-s-d1",
+  "name": "5. Kūṭadantasuttaṃ",
+  "number": 5,
+  "paranum": [ 323, 358 ]
+ },
+ {
+  "file": "cst-s-d1",
+  "name": "6. Mahālisuttaṃ",
+  "number": 6,
+  "paranum": [ 359, 377 ]
+ },
+ {
+  "file": "cst-s-d1",
+  "name": "7. Jāliyasuttaṃ",
+  "number": 7,
+  "paranum": [ 378, 380 ]
+ },
+ {
+  "file": "cst-s-d1",
+  "name": "8. Mahāsīhanādasuttaṃ",
+  "number": 8,
+  "paranum": [ 381, 405 ]
+ },
+ {
+  "file": "cst-s-d1",
+  "name": "9. Poṭṭhapādasuttaṃ",
+  "number": 9,
+  "paranum": [ 406, 443 ]
+ },
+ {
+  "file": "cst-s-d1",
+  "name": "10. Subhasuttaṃ",
+  "number": 10,
+  "paranum": [ 444, 480 ]
+ },
+ {
+  "file": "cst-s-d1",
+  "name": "11. Kevaṭṭasuttaṃ",
+  "number": 11,
+  "paranum": [ 481, 500 ]
+ },
+ {
+  "file": "cst-s-d1",
+  "name": "12. Lohiccasuttaṃ",
+  "number": 12,
+  "paranum": [ 501, 517 ]
+ },
+ {
+  "file": "cst-s-d1",
+  "name": "13. Tevijjasuttaṃ",
+  "number": 13,
+  "paranum": [ 518, 559 ]
+ },
+ {
+  "file": "cst-s-d2",
+  "name": "1. Mahāpadānasuttaṃ",
+  "number": 14,
+  "paranum": [ 1, 94 ]
+ },
+ {
+  "file": "cst-s-d2",
+  "name": "2. Mahānidānasuttaṃ",
+  "number": 15,
+  "paranum": [ 95, 130 ]
+ },
+ {
+  "file": "cst-s-d2",
+  "name": "3. Mahāparinibbānasuttaṃ",
+  "number": 16,
+  "paranum": [ 131, 240 ]
+ },
+ {
+  "file": "cst-s-d2",
+  "name": "4. Mahāsudassanasuttaṃ",
+  "number": 17,
+  "paranum": [ 241, 272 ]
+ },
+ {
+  "file": "cst-s-d2",
+  "name": "5. Janavasabhasuttaṃ",
+  "number": 18,
+  "paranum": [ 273, 292 ]
+ },
+ {
+  "file": "cst-s-d2",
+  "name": "6. Mahāgovindasuttaṃ",
+  "number": 19,
+  "paranum": [ 293, 330 ]
+ },
+ {
+  "file": "cst-s-d2",
+  "name": "7. Mahāsamayasuttaṃ",
+  "number": 20,
+  "paranum": [ 331, 343 ]
+ },
+ {
+  "file": "cst-s-d2",
+  "name": "8. Sakkapañhasuttaṃ",
+  "number": 21,
+  "paranum": [ 344, 371 ]
+ },
+ {
+  "file": "cst-s-d2",
+  "name": "9. Mahāsatipaṭṭhānasuttaṃ",
+  "number": 22,
+  "paranum": [ 372, 405 ]
+ },
+ {
+  "file": "cst-s-d2",
+  "name": "10. Pāyāsisuttaṃ",
+  "number": 23,
+  "paranum": [ 406, 441 ]
+ },
+ {
+  "file": "cst-s-d3",
+  "name": "1. Pāthikasuttaṃ",
+  "number": 24,
+  "paranum": [ 1, 48 ]
+ },
+ {
+  "file": "cst-s-d3",
+  "name": "2. Udumbarikasuttaṃ",
+  "number": 25,
+  "paranum": [ 49, 79 ]
+ },
+ {
+  "file": "cst-s-d3",
+  "name": "3. Cakkavattisuttaṃ",
+  "number": 26,
+  "paranum": [ 80, 110 ]
+ },
+ {
+  "file": "cst-s-d3",
+  "name": "4. Aggaññasuttaṃ",
+  "number": 27,
+  "paranum": [ 111, 140 ]
+ },
+ {
+  "file": "cst-s-d3",
+  "name": "5. Sampasādanīyasuttaṃ",
+  "number": 28,
+  "paranum": [ 141, 163 ]
+ },
+ {
+  "file": "cst-s-d3",
+  "name": "6. Pāsādikasuttaṃ",
+  "number": 29,
+  "paranum": [ 164, 197 ]
+ },
+ {
+  "file": "cst-s-d3",
+  "name": "7. Lakkhaṇasuttaṃ",
+  "number": 30,
+  "paranum": [ 198, 241 ]
+ },
+ {
+  "file": "cst-s-d3",
+  "name": "8. Siṅgālasuttaṃ",
+  "number": 31,
+  "paranum": [ 242, 274 ]
+ },
+ {
+  "file": "cst-s-d3",
+  "name": "9. Āṭānāṭiyasuttaṃ",
+  "number": 32,
+  "paranum": [ 275, 295 ]
+ },
+ {
+  "file": "cst-s-d3",
+  "name": "10. Saṅgītisuttaṃ",
+  "number": 33,
+  "paranum": [ 296, 349 ]
+ },
+ {
+  "file": "cst-s-d3",
+  "name": "11. Dasuttarasuttaṃ",
+  "number": 34,
+  "paranum": [ 350, 360 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "1. Mūlapariyāyasuttaṃ",
+  "number": 1,
+  "paranum": [ 1, 13 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "2. Sabbāsavasuttaṃ",
+  "number": 2,
+  "paranum": [ 14, 28 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "3. Dhammadāyādasuttaṃ",
+  "number": 3,
+  "paranum": [ 29, 33 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "4. Bhayabheravasuttaṃ",
+  "number": 4,
+  "paranum": [ 34, 56 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "5. Anaṅgaṇasuttaṃ",
+  "number": 5,
+  "paranum": [ 57, 63 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "6. Ākaṅkheyyasuttaṃ",
+  "number": 6,
+  "paranum": [ 64, 69 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "7. Vatthasuttaṃ",
+  "number": 7,
+  "paranum": [ 70, 80 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "8. Sallekhasuttaṃ",
+  "number": 8,
+  "paranum": [ 81, 88 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "9. Sammādiṭṭhisuttaṃ",
+  "number": 9,
+  "paranum": [ 89, 104 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "10. Mahāsatipaṭṭhānasuttaṃ",
+  "number": 10,
+  "paranum": [ 105, 138 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "1. Cūḷasīhanādasuttaṃ",
+  "number": 11,
+  "paranum": [ 139, 145 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "2. Mahāsīhanādasuttaṃ",
+  "number": 12,
+  "paranum": [ 146, 162 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "3. Mahādukkhakkhandhasuttaṃ",
+  "number": 13,
+  "paranum": [ 163, 174 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "4. Cūḷadukkhakkhandhasuttaṃ",
+  "number": 14,
+  "paranum": [ 175, 180 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "5. Anumānasuttaṃ",
+  "number": 15,
+  "paranum": [ 181, 184 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "6. Cetokhilasuttaṃ",
+  "number": 16,
+  "paranum": [ 185, 189 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "7. Vanapatthasuttaṃ",
+  "number": 17,
+  "paranum": [ 190, 198 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "8. Madhupiṇḍikasuttaṃ",
+  "number": 18,
+  "paranum": [ 199, 205 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "9. Dvedhāvitakkasuttaṃ",
+  "number": 19,
+  "paranum": [ 206, 215 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "10. Vitakkasaṇṭhānasuttaṃ",
+  "number": 20,
+  "paranum": [ 216, 221 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "1. Kakacūpamasuttaṃ",
+  "number": 21,
+  "paranum": [ 222, 233 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "2. Alagaddūpamasuttaṃ",
+  "number": 22,
+  "paranum": [ 234, 248 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "3. Vammikasuttaṃ",
+  "number": 23,
+  "paranum": [ 249, 251 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "4. Rathavinītasuttaṃ",
+  "number": 24,
+  "paranum": [ 252, 260 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "5. Nivāpasuttaṃ",
+  "number": 25,
+  "paranum": [ 261, 271 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "6. Pāsarāsisuttaṃ",
+  "number": 26,
+  "paranum": [ 272, 287 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "7. Cūḷahatthipadopamasuttaṃ",
+  "number": 27,
+  "paranum": [ 288, 299 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "8. Mahāhatthipadopamasuttaṃ",
+  "number": 28,
+  "paranum": [ 300, 306 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "9. Mahāsāropamasuttaṃ",
+  "number": 29,
+  "paranum": [ 307, 311 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "10. Cūḷasāropamasuttaṃ",
+  "number": 30,
+  "paranum": [ 312, 324 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "1. Cūḷagosiṅgasuttaṃ",
+  "number": 31,
+  "paranum": [ 325, 331 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "2. Mahāgosiṅgasuttaṃ",
+  "number": 32,
+  "paranum": [ 332, 345 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "3. Mahāgopālakasuttaṃ",
+  "number": 33,
+  "paranum": [ 346, 349 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "4. Cūḷagopālakasuttaṃ",
+  "number": 34,
+  "paranum": [ 350, 352 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "5. Cūḷasaccakasuttaṃ",
+  "number": 35,
+  "paranum": [ 353, 363 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "6. Mahāsaccakasuttaṃ",
+  "number": 36,
+  "paranum": [ 364, 389 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "7. Cūḷataṇhāsaṅkhayasuttaṃ",
+  "number": 37,
+  "paranum": [ 390, 395 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "8. Mahātaṇhāsaṅkhayasuttaṃ",
+  "number": 38,
+  "paranum": [ 396, 414 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "9. Mahāassapurasuttaṃ",
+  "number": 39,
+  "paranum": [ 415, 434 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "10. Cūḷaassapurasuttaṃ",
+  "number": 40,
+  "paranum": [ 435, 438 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "1. Sāleyyakasuttaṃ",
+  "number": 41,
+  "paranum": [ 439, 443 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "2. Verañjakasuttaṃ",
+  "number": 42,
+  "paranum": [ 444, 448 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "3. Mahāvedallasuttaṃ",
+  "number": 43,
+  "paranum": [ 449, 459 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "4. Cūḷavedallasuttaṃ",
+  "number": 44,
+  "paranum": [ 460, 467 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "5. Cūḷadhammasamādānasuttaṃ",
+  "number": 45,
+  "paranum": [ 468, 472 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "6. Mahādhammasamādānasuttaṃ",
+  "number": 46,
+  "paranum": [ 473, 486 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "7. Vīmaṃsakasuttaṃ",
+  "number": 47,
+  "paranum": [ 487, 490 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "8. Kosambiyasuttaṃ",
+  "number": 48,
+  "paranum": [ 491, 500 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "9. Brahmanimantanikasuttaṃ",
+  "number": 49,
+  "paranum": [ 501, 505 ]
+ },
+ {
+  "file": "cst-s-m1",
+  "name": "10. Māratajjanīyasuttaṃ",
+  "number": 50,
+  "paranum": [ 506, 513 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "1. Kandarakasuttaṃ",
+  "number": 51,
+  "paranum": [ 1, 16 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "2. Aṭṭhakanāgarasuttaṃ",
+  "number": 52,
+  "paranum": [ 17, 21 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "3. Sekhasuttaṃ",
+  "number": 53,
+  "paranum": [ 22, 30 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "4. Potaliyasuttaṃ",
+  "number": 54,
+  "paranum": [ 31, 50 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "5. Jīvakasuttaṃ",
+  "number": 55,
+  "paranum": [ 51, 55 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "6. Upālisuttaṃ",
+  "number": 56,
+  "paranum": [ 56, 77 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "7. Kukkuravatikasuttaṃ",
+  "number": 57,
+  "paranum": [ 78, 82 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "8. Abhayarājakumārasuttaṃ",
+  "number": 58,
+  "paranum": [ 83, 87 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "9. Bahuvedanīyasuttaṃ",
+  "number": 59,
+  "paranum": [ 88, 91 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "10. Apaṇṇakasuttaṃ",
+  "number": 60,
+  "paranum": [ 92, 106 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "1. Ambalaṭṭhikarāhulovādasuttaṃ",
+  "number": 61,
+  "paranum": [ 107, 112 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "2. Mahārāhulovādasuttaṃ",
+  "number": 62,
+  "paranum": [ 113, 121 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "3. Cūḷamālukyasuttaṃ",
+  "number": 63,
+  "paranum": [ 122, 128 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "4. Mahāmālukyasuttaṃ",
+  "number": 64,
+  "paranum": [ 129, 133 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "5. Bhaddālisuttaṃ",
+  "number": 65,
+  "paranum": [ 134, 147 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "6. Laṭukikopamasuttaṃ",
+  "number": 66,
+  "paranum": [ 148, 156 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "7. Cātumasuttaṃ",
+  "number": 67,
+  "paranum": [ 157, 165 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "8. Naḷakapānasuttaṃ",
+  "number": 68,
+  "paranum": [ 166, 172 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "9. Goliyānisuttaṃ",
+  "number": 69,
+  "paranum": [ 173, 173 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "10. Kīṭāgirisuttaṃ",
+  "number": 70,
+  "paranum": [ 174, 184 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "1. Tevijjavacchasuttaṃ",
+  "number": 71,
+  "paranum": [ 185, 186 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "2. Aggivacchasuttaṃ",
+  "number": 72,
+  "paranum": [ 187, 192 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "3. Mahāvacchasuttaṃ",
+  "number": 73,
+  "paranum": [ 193, 200 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "4. Dīghanakhasuttaṃ",
+  "number": 74,
+  "paranum": [ 201, 206 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "5. Māgaṇḍiyasuttaṃ",
+  "number": 75,
+  "paranum": [ 207, 222 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "6. Sandakasuttaṃ",
+  "number": 76,
+  "paranum": [ 223, 236 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "7. Mahāsakuludāyisuttaṃ",
+  "number": 77,
+  "paranum": [ 237, 259 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "8. Samaṇamuṇḍikasuttaṃ",
+  "number": 78,
+  "paranum": [ 260, 268 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "9. Cūḷasakuludāyisuttaṃ",
+  "number": 79,
+  "paranum": [ 269, 277 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "10. Vekhanasasuttaṃ",
+  "number": 80,
+  "paranum": [ 278, 281 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "1. Ghaṭikārasuttaṃ",
+  "number": 81,
+  "paranum": [ 282, 292 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "2. Raṭṭhapālasuttaṃ",
+  "number": 82,
+  "paranum": [ 293, 307 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "3. Maghadevasuttaṃ",
+  "number": 83,
+  "paranum": [ 308, 316 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "4. Madhurasuttaṃ",
+  "number": 84,
+  "paranum": [ 317, 323 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "5. Bodhirājakumārasuttaṃ",
+  "number": 85,
+  "paranum": [ 324, 346 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "6. Aṅgulimālasuttaṃ",
+  "number": 86,
+  "paranum": [ 347, 352 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "7. Piyajātikasuttaṃ",
+  "number": 87,
+  "paranum": [ 353, 357 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "8. Bāhitikasuttaṃ",
+  "number": 88,
+  "paranum": [ 358, 363 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "9. Dhammacetiyasuttaṃ",
+  "number": 89,
+  "paranum": [ 364, 374 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "10. Kaṇṇakatthalasuttaṃ",
+  "number": 90,
+  "paranum": [ 375, 382 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "1. Brahmāyusuttaṃ",
+  "number": 91,
+  "paranum": [ 383, 395 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "2. Selasuttaṃ",
+  "number": 92,
+  "paranum": [ 396, 400 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "3. Assalāyanasuttaṃ",
+  "number": 93,
+  "paranum": [ 401, 411 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "4. Ghoṭamukhasuttaṃ",
+  "number": 94,
+  "paranum": [ 412, 421 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "5. Caṅkīsuttaṃ",
+  "number": 95,
+  "paranum": [ 422, 435 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "6. Esukārīsuttaṃ",
+  "number": 96,
+  "paranum": [ 436, 444 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "7. Dhanañjānisuttaṃ",
+  "number": 97,
+  "paranum": [ 445, 453 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "8. Vāseṭṭhasuttaṃ",
+  "number": 98,
+  "paranum": [ 454, 461 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "9. Subhasuttaṃ",
+  "number": 99,
+  "paranum": [ 462, 472 ]
+ },
+ {
+  "file": "cst-s-m2",
+  "name": "10. Saṅgāravasuttaṃ",
+  "number": 100,
+  "paranum": [ 473, 486 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "1. Devadahasuttaṃ",
+  "number": 101,
+  "paranum": [ 1, 20 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "2. Pañcattayasuttaṃ [pañcāyatanasutta (ka.)] ",
+  "number": 102,
+  "paranum": [ 21, 33 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "3. Kintisuttaṃ",
+  "number": 103,
+  "paranum": [ 34, 40 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "4. Sāmagāmasuttaṃ",
+  "number": 104,
+  "paranum": [ 41, 54 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "5. Sunakkhattasuttaṃ",
+  "number": 105,
+  "paranum": [ 55, 65 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "6. Āneñjasappāyasuttaṃ",
+  "number": 106,
+  "paranum": [ 66, 73 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "7. Gaṇakamoggallānasuttaṃ",
+  "number": 107,
+  "paranum": [ 74, 78 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "8. Gopakamoggallānasuttaṃ",
+  "number": 108,
+  "paranum": [ 79, 84 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "9. Mahāpuṇṇamasuttaṃ",
+  "number": 109,
+  "paranum": [ 85, 90 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "10. Cūḷapuṇṇamasuttaṃ",
+  "number": 110,
+  "paranum": [ 91, 92 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "1. Anupadasuttaṃ",
+  "number": 111,
+  "paranum": [ 93, 97 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "2. Chabbisodhanasuttaṃ",
+  "number": 112,
+  "paranum": [ 98, 104 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "3. Sappurisasuttaṃ",
+  "number": 113,
+  "paranum": [ 105, 108 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "4. Sevitabbāsevitabbasuttaṃ",
+  "number": 114,
+  "paranum": [ 109, 123 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "5. Bahudhātukasuttaṃ",
+  "number": 115,
+  "paranum": [ 124, 132 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "6. Isigilisuttaṃ",
+  "number": 116,
+  "paranum": [ 133, 135 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "7. Mahācattārīsakasuttaṃ",
+  "number": 117,
+  "paranum": [ 136, 143 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "8. Ānāpānassatisuttaṃ",
+  "number": 118,
+  "paranum": [ 144, 152 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "9. Kāyagatāsatisuttaṃ",
+  "number": 119,
+  "paranum": [ 153, 159 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "10. Saṅkhārupapattisuttaṃ",
+  "number": 120,
+  "paranum": [ 160, 175 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "1. Cūḷasuññatasuttaṃ",
+  "number": 121,
+  "paranum": [ 176, 184 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "2. Mahāsuññatasuttaṃ",
+  "number": 122,
+  "paranum": [ 185, 196 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "3. Acchariyaabbhutasuttaṃ",
+  "number": 123,
+  "paranum": [ 197, 208 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "4. Bākulasuttaṃ",
+  "number": 124,
+  "paranum": [ 209, 212 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "5. Dantabhūmisuttaṃ",
+  "number": 125,
+  "paranum": [ 213, 222 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "6. Bhūmijasuttaṃ",
+  "number": 126,
+  "paranum": [ 223, 228 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "7. Anuruddhasuttaṃ",
+  "number": 127,
+  "paranum": [ 229, 235 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "8. Upakkilesasuttaṃ",
+  "number": 128,
+  "paranum": [ 236, 245 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "9. Bālapaṇḍitasuttaṃ",
+  "number": 129,
+  "paranum": [ 246, 260 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "10. Devadūtasuttaṃ",
+  "number": 130,
+  "paranum": [ 261, 271 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "1. Bhaddekarattasuttaṃ",
+  "number": 131,
+  "paranum": [ 272, 275 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "2. Ānandabhaddekarattasuttaṃ",
+  "number": 132,
+  "paranum": [ 276, 278 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "3. Mahākaccānabhaddekarattasuttaṃ",
+  "number": 133,
+  "paranum": [ 279, 285 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "4. Lomasakaṅgiyabhaddekarattasuttaṃ",
+  "number": 134,
+  "paranum": [ 286, 288 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "5. Cūḷakammavibhaṅgasuttaṃ [subhasuttantipi vuccati] ",
+  "number": 135,
+  "paranum": [ 289, 297 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "6. Mahākammavibhaṅgasuttaṃ",
+  "number": 136,
+  "paranum": [ 298, 303 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "7. Saḷāyatanavibhaṅgasuttaṃ",
+  "number": 137,
+  "paranum": [ 304, 312 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "8. Uddesavibhaṅgasuttaṃ",
+  "number": 138,
+  "paranum": [ 313, 322 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "9. Araṇavibhaṅgasuttaṃ",
+  "number": 139,
+  "paranum": [ 323, 341 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "10. Dhātuvibhaṅgasuttaṃ",
+  "number": 140,
+  "paranum": [ 342, 370 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "11. Saccavibhaṅgasuttaṃ",
+  "number": 141,
+  "paranum": [ 371, 375 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "12. Dakkhiṇāvibhaṅgasuttaṃ",
+  "number": 142,
+  "paranum": [ 376, 382 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "1. Anāthapiṇḍikovādasuttaṃ",
+  "number": 143,
+  "paranum": [ 383, 388 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "2. Channovādasuttaṃ",
+  "number": 144,
+  "paranum": [ 389, 394 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "3. Puṇṇovādasuttaṃ",
+  "number": 145,
+  "paranum": [ 395, 397 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "4. Nandakovādasuttaṃ",
+  "number": 146,
+  "paranum": [ 398, 415 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "5. Cūḷarāhulovādasuttaṃ",
+  "number": 147,
+  "paranum": [ 416, 419 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "6. Chachakkasuttaṃ",
+  "number": 148,
+  "paranum": [ 420, 427 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "7. Mahāsaḷāyatanikasuttaṃ",
+  "number": 149,
+  "paranum": [ 428, 433 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "8. Nagaravindeyyasuttaṃ",
+  "number": 150,
+  "paranum": [ 434, 437 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "9. Piṇḍapātapārisuddhisuttaṃ",
+  "number": 151,
+  "paranum": [ 438, 452 ]
+ },
+ {
+  "file": "cst-s-m3",
+  "name": "10. Indriyabhāvanāsuttaṃ",
+  "number": 152,
+  "paranum": [ 453, 463 ]
+ },
+ {
+  "file": "cst-s-s1",
+  "name": "1. Devatāsaṃyuttaṃ",
+  "number": 1,
+  "paranum": [ 1, 81 ]
+ },
+ {
+  "file": "cst-s-s1",
+  "name": "2. Devaputtasaṃyuttaṃ",
+  "number": 2,
+  "paranum": [ 82, 111 ]
+ },
+ {
+  "file": "cst-s-s1",
+  "name": "3. Kosalasaṃyuttaṃ",
+  "number": 3,
+  "paranum": [ 112, 136 ]
+ },
+ {
+  "file": "cst-s-s1",
+  "name": "4. Mārasaṃyuttaṃ",
+  "number": 4,
+  "paranum": [ 137, 161 ]
+ },
+ {
+  "file": "cst-s-s1",
+  "name": "5. Bhikkhunīsaṃyuttaṃ",
+  "number": 5,
+  "paranum": [ 162, 171 ]
+ },
+ {
+  "file": "cst-s-s1",
+  "name": "6. Brahmasaṃyuttaṃ",
+  "number": 6,
+  "paranum": [ 172, 186 ]
+ },
+ {
+  "file": "cst-s-s1",
+  "name": "7. Brāhmaṇasaṃyuttaṃ",
+  "number": 7,
+  "paranum": [ 187, 208 ]
+ },
+ {
+  "file": "cst-s-s1",
+  "name": "8. Vaṅgīsasaṃyuttaṃ",
+  "number": 8,
+  "paranum": [ 209, 220 ]
+ },
+ {
+  "file": "cst-s-s1",
+  "name": "9. Vanasaṃyuttaṃ",
+  "number": 9,
+  "paranum": [ 221, 234 ]
+ },
+ {
+  "file": "cst-s-s1",
+  "name": "10. Yakkhasaṃyuttaṃ",
+  "number": 10,
+  "paranum": [ 235, 246 ]
+ },
+ {
+  "file": "cst-s-s1",
+  "name": "11. Sakkasaṃyuttaṃ",
+  "number": 11,
+  "paranum": [ 247, 271 ]
+ },
+ {
+  "file": "cst-s-s2",
+  "name": "1. Nidānasaṃyuttaṃ",
+  "number": 12,
+  "paranum": [ 1, 73 ]
+ },
+ {
+  "file": "cst-s-s2",
+  "name": "2. Abhisamayasaṃyuttaṃ",
+  "number": 13,
+  "paranum": [ 74, 84 ]
+ },
+ {
+  "file": "cst-s-s2",
+  "name": "3. Dhātusaṃyuttaṃ",
+  "number": 14,
+  "paranum": [ 85, 123 ]
+ },
+ {
+  "file": "cst-s-s2",
+  "name": "4. Anamataggasaṃyuttaṃ",
+  "number": 15,
+  "paranum": [ 124, 143 ]
+ },
+ {
+  "file": "cst-s-s2",
+  "name": "5. Kassapasaṃyuttaṃ",
+  "number": 16,
+  "paranum": [ 144, 156 ]
+ },
+ {
+  "file": "cst-s-s2",
+  "name": "6. Lābhasakkārasaṃyuttaṃ",
+  "number": 17,
+  "paranum": [ 157, 187 ]
+ },
+ {
+  "file": "cst-s-s2",
+  "name": "7. Rāhulasaṃyuttaṃ",
+  "number": 18,
+  "paranum": [ 188, 201 ]
+ },
+ {
+  "file": "cst-s-s2",
+  "name": "8. Lakkhaṇasaṃyuttaṃ",
+  "number": 19,
+  "paranum": [ 202, 222 ]
+ },
+ {
+  "file": "cst-s-s2",
+  "name": "9. Opammasaṃyuttaṃ",
+  "number": 20,
+  "paranum": [ 223, 234 ]
+ },
+ {
+  "file": "cst-s-s2",
+  "name": "10. Bhikkhusaṃyuttaṃ",
+  "number": 21,
+  "paranum": [ 235, 246 ]
+ },
+ {
+  "file": "cst-s-s3",
+  "name": "1. Khandhasaṃyuttaṃ",
+  "number": 22,
+  "paranum": [ 1, 159 ]
+ },
+ {
+  "file": "cst-s-s3",
+  "name": "2. Rādhasaṃyuttaṃ",
+  "number": 23,
+  "paranum": [ 160, 205 ]
+ },
+ {
+  "file": "cst-s-s3",
+  "name": "3. Diṭṭhisaṃyuttaṃ",
+  "number": 24,
+  "paranum": [ 206, 301 ]
+ },
+ {
+  "file": "cst-s-s3",
+  "name": "4. Okkantasaṃyuttaṃ",
+  "number": 25,
+  "paranum": [ 302, 311 ]
+ },
+ {
+  "file": "cst-s-s3",
+  "name": "5. Uppādasaṃyuttaṃ",
+  "number": 26,
+  "paranum": [ 312, 321 ]
+ },
+ {
+  "file": "cst-s-s3",
+  "name": "6. Kilesasaṃyuttaṃ",
+  "number": 27,
+  "paranum": [ 322, 331 ]
+ },
+ {
+  "file": "cst-s-s3",
+  "name": "7. Sāriputtasaṃyuttaṃ",
+  "number": 28,
+  "paranum": [ 332, 341 ]
+ },
+ {
+  "file": "cst-s-s3",
+  "name": "8. Nāgasaṃyuttaṃ",
+  "number": 29,
+  "paranum": [ 342, 391 ]
+ },
+ {
+  "file": "cst-s-s3",
+  "name": "9. Supaṇṇasaṃyuttaṃ",
+  "number": 30,
+  "paranum": [ 392, 437 ]
+ },
+ {
+  "file": "cst-s-s3",
+  "name": "10. Gandhabbakāyasaṃyuttaṃ",
+  "number": 31,
+  "paranum": [ 438, 549 ]
+ },
+ {
+  "file": "cst-s-s3",
+  "name": "11. Valāhakasaṃyuttaṃ",
+  "number": 32,
+  "paranum": [ 550, 606 ]
+ },
+ {
+  "file": "cst-s-s3",
+  "name": "12. Vacchagottasaṃyuttaṃ",
+  "number": 33,
+  "paranum": [ 607, 661 ]
+ },
+ {
+  "file": "cst-s-s3",
+  "name": "13. Jhānasaṃyuttaṃ",
+  "number": 34,
+  "paranum": [ 662, 716 ]
+ },
+ {
+  "file": "cst-s-s4",
+  "name": "1. Saḷāyatanasaṃyuttaṃ",
+  "number": 35,
+  "paranum": [ 1, 248 ]
+ },
+ {
+  "file": "cst-s-s4",
+  "name": "2. Vedanāsaṃyuttaṃ",
+  "number": 36,
+  "paranum": [ 249, 279 ]
+ },
+ {
+  "file": "cst-s-s4",
+  "name": "3. Mātugāmasaṃyuttaṃ",
+  "number": 37,
+  "paranum": [ 280, 313 ]
+ },
+ {
+  "file": "cst-s-s4",
+  "name": "4. Jambukhādakasaṃyuttaṃ",
+  "number": 38,
+  "paranum": [ 314, 329 ]
+ },
+ {
+  "file": "cst-s-s4",
+  "name": "5. Sāmaṇḍakasaṃyuttaṃ",
+  "number": 39,
+  "paranum": [ 330, 331 ]
+ },
+ {
+  "file": "cst-s-s4",
+  "name": "6. Moggallānasaṃyuttaṃ",
+  "number": 40,
+  "paranum": [ 332, 342 ]
+ },
+ {
+  "file": "cst-s-s4",
+  "name": "7. Cittasaṃyuttaṃ",
+  "number": 41,
+  "paranum": [ 343, 352 ]
+ },
+ {
+  "file": "cst-s-s4",
+  "name": "8. Gāmaṇisaṃyuttaṃ",
+  "number": 42,
+  "paranum": [ 353, 365 ]
+ },
+ {
+  "file": "cst-s-s4",
+  "name": "9. Asaṅkhatasaṃyuttaṃ",
+  "number": 43,
+  "paranum": [ 366, 409 ]
+ },
+ {
+  "file": "cst-s-s4",
+  "name": "10. Abyākatasaṃyuttaṃ",
+  "number": 44,
+  "paranum": [ 410, 420 ]
+ },
+ {
+  "file": "cst-s-s5",
+  "name": "1. Maggasaṃyuttaṃ",
+  "number": 45,
+  "paranum": [ 1, 181 ]
+ },
+ {
+  "file": "cst-s-s5",
+  "name": "2. Bojjhaṅgasaṃyuttaṃ",
+  "number": 46,
+  "paranum": [ 182, 366 ]
+ },
+ {
+  "file": "cst-s-s5",
+  "name": "3. Satipaṭṭhānasaṃyuttaṃ",
+  "number": 47,
+  "paranum": [ 367, 470 ]
+ },
+ {
+  "file": "cst-s-s5",
+  "name": "4. Indriyasaṃyuttaṃ",
+  "number": 48,
+  "paranum": [ 471, 650 ]
+ },
+ {
+  "file": "cst-s-s5",
+  "name": "5. Sammappadhānasaṃyuttaṃ",
+  "number": 49,
+  "paranum": [ 651, 704 ]
+ },
+ {
+  "file": "cst-s-s5",
+  "name": "6. Balasaṃyuttaṃ",
+  "number": 50,
+  "paranum": [ 705, 812 ]
+ },
+ {
+  "file": "cst-s-s5",
+  "name": "7. Iddhipādasaṃyuttaṃ",
+  "number": 51,
+  "paranum": [ 813, 898 ]
+ },
+ {
+  "file": "cst-s-s5",
+  "name": "8. Anuruddhasaṃyuttaṃ",
+  "number": 52,
+  "paranum": [ 899, 922 ]
+ },
+ {
+  "file": "cst-s-s5",
+  "name": "9. Jhānasaṃyuttaṃ",
+  "number": 53,
+  "paranum": [ 923, 976 ]
+ },
+ {
+  "file": "cst-s-s5",
+  "name": "10. Ānāpānasaṃyuttaṃ",
+  "number": 54,
+  "paranum": [ 977, 996 ]
+ },
+ {
+  "file": "cst-s-s5",
+  "name": "11. Sotāpattisaṃyuttaṃ",
+  "number": 55,
+  "paranum": [ 997, 1070 ]
+ },
+ {
+  "file": "cst-s-s5",
+  "name": "12. Saccasaṃyuttaṃ",
+  "number": 56,
+  "paranum": [ 1071, 1201 ]
+ }
+]

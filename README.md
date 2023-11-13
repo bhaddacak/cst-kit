@@ -7,7 +7,7 @@ This repository contains a restructured version of the Chaṭṭha Saṅgāyana 
 
 - Reorganizing the collection, making it easier to find related texts
 - Restructuring some texts by fixing the hierarchy of headers, making them easier to program and navigate
-- Checking paragraph numbers and making them more systematically consistent (This is important because text relationship heavily depends on paragraph numbers)
+- Checking paragraph numbers and making them more systematically consistent (This is important because text relationships heavily depend on paragraph numbers)
 - Fixing obvious typos (if any, the fixes will be reported)
 - Removing some minor texts
 
@@ -67,6 +67,22 @@ For example, this will make a new collection of fixed XML in directory `xml`. (O
 $ ./makecst xml
 ```
 
+## Other tools
+
+Apart from the main program described above, there are also some small programs that can be useful somehow to developers.
+
+The first is the sutta information generator, `gensuttainfo`. This works on gz data of the three main nikāyas, i.e., D, M and S. It can extract the name and number of suttas (for D and M), or of saṃyuttas (for S), and the corresponding paragraph numbers. The output of this program is `suttainfo.json`. This information can be used to translate the references to the rough referring method, which identifies a sutta/saṃyutta by a number in its series. By this simple counting, we have DN 1-34, MN 1-152, and SN 1-56. This system can ease Western learners to some extent, but it is at odds and incompatible with the traditional way of arrangement.
+
+If `suttainfo.json` is enough in uses, it is no need to run the program. But the users can generate the file themselves by entering the following command. This tool makes use of a Perl script. So, Perl also has to be present in the system.
+
+```
+$ ./gensuttainfo
+```
+
+If `suttainfo.json` already exists, the program will not create a new one. The old file has to be removed or renamed first. Or you can overwrite the old file by adding `--force` to the command.
+
+Other minor tools are used for error checking, mainly by the author. So, there are few chances that they will be used. If you are curious, examine the programs yourself. They are just simple shell scripts making use of grep.
+
 ## The new structure explained
 
 ### External structure
@@ -124,7 +140,7 @@ By this way of arrangement, related texts are put together. They can be linked b
 
 Another point that the new structure addresses is the name of texts for referencing. We should have a consistent way to make references. With a well-organized structure, we can refer to them systematically (and it should be easy). To cope with this, each separate item of text is counted as a book. And each book has a unique name that can be used in referring.
 
-To be precise, the structure of a book is shaped by textual content and paragraph numbers. Normally, if a new series of numbers is introduced, it will be separated as a new book. Only when the text has clearly distinct content, it will be a book on its own even if it uses numbers form another series. [Bhikkhunīvibhaņga](https://bhaddacak.github.io/cst?biv) is a marked example in this case. However, in rare cases, one book may utilize multiple number series, for instance, Bhikkhupātimokkha and Bhikkhunīpātimokkha.
+To be precise, the structure of a book is shaped by textual content and paragraph numbers. Normally, if a new series of numbers is introduced, it will be separated as a new book. Only when the text has clearly distinct content, it will be a book on its own even if it uses numbers form another series. [Bhikkhunīvibhaṅga](https://bhaddacak.github.io/cst?biv) is a marked example in this case. However, in rare cases, one book may utilize multiple number series, for instance, Bhikkhupātimokkha and Bhikkhunīpātimokkha.
 
 The system of naming may not be well-settled yet because the collection is not completed. Also what will be included or excluded in other texts is yet to be decided.
 
@@ -155,9 +171,9 @@ Other noted renditions in HTML/TXT output are:
 
 One marked characteristic of TXT output is paragraph numbers are only numbers appear at the beginning of the lines. These numbers can be extracted easily by programmatic means.
 
-## The tree of text relationship
+## The tree of text relationships
 
-Showing a tree-like structure of text relationship can give a quick picture and better understanding. So, the following diagrams are added here. This part also appears in [CST page](https://bhaddacak.github.io/cstpage). For some more information, including a referencing guide, please see that page.
+Showing a tree-like structure of text relationships can give a quick picture and better understanding. So, the following diagrams are added here. This part also appears in [CST page](https://bhaddacak.github.io/cstpage). For some more information, including a referencing guide, please see that page.
 
 ```
 ============
@@ -235,18 +251,102 @@ Vinayapiṭaka
 ==============
 Suttantapiṭaka
 ==============
-  |- Dīghanikāya Sīlakkhandhavagga (D1)
-  |   |- Sumaṅgalavilāsinī 1 (Smv1)
-  |       |- Līnatthappakāsanā 1 (Lpa 1)
-  |       |- Sīlakkhandhavagga-abhinavaṭīkā (Sv-nt)
-  |
-  |- Dīghanikāya Mahāvagga (D2)
-  |   |- Sumaṅgalavilāsinī 2 (Smv2)
-  |       |- Līnatthappakāsanā 2 (Lpa 2)
-  |
-  |- Dīghanikāya Pāthikavagga (D3)
-  |   |- Sumaṅgalavilāsinī 3 (Smv3)
-  |       |- Līnatthappakāsanā 3 (Lpa 3)
+  |- Dīghanikāya
+  |   |
+  |   |- Sīlakkhandhavagga (D1)
+  |   |   |- Sumaṅgalavilāsinī 1 (Smv1)
+  |   |       |- Līnatthappakāsinī (Dīghanikāya) 1 (Lpd1)
+  |   |       |- Sīlakkhandhavagga-abhinavaṭīkā (Sv-nt)
+  |   |
+  |   |- Mahāvagga (D2)
+  |   |   |- Sumaṅgalavilāsinī 2 (Smv2)
+  |   |       |- Līnatthappakāsinī (Dīghanikāya) 2 (Lpd2)
+  |   |
+  |   |- Pāthikavagga (D3)
+  |       |- Sumaṅgalavilāsinī 3 (Smv3)
+  |           |- Līnatthappakāsinī (Dīghanikāya) 3 (Lpd3)
+  |    
+  |- Majjhimanikāya
+  |   |
+  |   |- Mūlapaṇṇāsa (M1)
+  |   |   |- Papañcasūdanī 1 (Pps1)
+  |   |       |- Līnatthappakāsinī (Majjhimanikāya) 1 (Lpm1)
+  |   |
+  |   |- Majjhimapaṇṇāsa (M2)
+  |   |   |- Papañcasūdanī 2 (Pps2)
+  |   |       |- Līnatthappakāsinī (Majjhimanikāya) 2 (Lpm2)
+  |   |
+  |   |- Uparipaṇṇāsa (M3)
+  |       |- Papañcasūdanī 3 (Pps3)
+  |           |- Līnatthappakāsinī (Majjhimanikāya) 3 (Lpm3)
+  |    
+  |- Saṃyuttanikāya
+  |   |
+  |   |- Sagāthāvagga (S1)
+  |   |   |- Sāratthappakāsinī 1 (Srp1)
+  |   |       |- Līnatthappakāsinī (Saṃyuttanikāya) 1 (Lps1)
+  |   |
+  |   |- Nidānavagga (S2)
+  |   |   |- Sāratthappakāsinī 2 (Srp1)
+  |   |       |- Līnatthappakāsinī (Saṃyuttanikāya) 2 (Lps2)
+  |   |
+  |   |- Khandhavagga (S3)
+  |   |   |- Sāratthappakāsinī 3 (Srp1)
+  |   |       |- Līnatthappakāsinī (Saṃyuttanikāya) 3 (Lps3)
+  |   |
+  |   |- Saḷāyatanavagga (S4)
+  |   |   |- Sāratthappakāsinī 4 (Srp4)
+  |   |       |- Līnatthappakāsinī (Saṃyuttanikāya) 4 (Lps4)
+  |   |
+  |   |- Mahāvagga (S5)
+  |       |- Sāratthappakāsinī 5 (Srp5)
+  |           |- Līnatthappakāsinī (Saṃyuttanikāya) 5 (Lps5)
+  |    
+  |- Aṅguttaranikāya
+  |   |
+  |   |- Ekakanipāta (A1)
+  |   |   |- Manorathapūraṇī 1 (Mnp1)
+  |   |       |- Sāratthamañjūsā 1 (Srm1)
+  |   |
+  |   |- Dukanipāta (A2)
+  |   |   |- Manorathapūraṇī 2 (Mnp2)
+  |   |       |- Sāratthamañjūsā 2 (Srm2)
+  |   |
+  |   |- Tikanipāta (A3)
+  |   |   |- Manorathapūraṇī 3 (Mnp3)
+  |   |       |- Sāratthamañjūsā 3 (Srm3)
+  |   |
+  |   |- Catukkanipāta (A4)
+  |   |   |- Manorathapūraṇī 4 (Mnp4)
+  |   |       |- Sāratthamañjūsā 4 (Srm4)
+  |   |
+  |   |- Pañcakanipāta (A5)
+  |   |   |- Manorathapūraṇī 5 (Mnp5)
+  |   |       |- Sāratthamañjūsā 5 (Srm5)
+  |   |
+  |   |- Chakkanipāta (A6)
+  |   |   |- Manorathapūraṇī 6 (Mnp6)
+  |   |       |- Sāratthamañjūsā 6 (Srm6)
+  |   |
+  |   |- Sattakanipāta (A7)
+  |   |   |- Manorathapūraṇī 7 (Mnp7)
+  |   |       |- Sāratthamañjūsā 7 (Srm7)
+  |   |
+  |   |- Aṭṭhakanipāta (A8)
+  |   |   |- Manorathapūraṇī 8 (Mnp8)
+  |   |       |- Sāratthamañjūsā 8 (Srm8)
+  |   |
+  |   |- Navakanipāta (A9)
+  |   |   |- Manorathapūraṇī 9 (Mnp9)
+  |   |       |- Sāratthamañjūsā 9 (Srm9)
+  |   |
+  |   |- Dasakanipāta (A10)
+  |   |   |- Manorathapūraṇī 10 (Mnp10)
+  |   |       |- Sāratthamañjūsā 10 (Srm10)
+  |   |
+  |   |- Ekādasakanipāta (A11)
+  |       |- Manorathapūraṇī 11 (Mnp11)
+  |           |- Sāratthamañjūsā 11 (Srm11)
 ```
 
 ## Notes on displaying the data
@@ -269,5 +369,5 @@ Typo data and other errors in texts can be sent directly to the author. Or if it
 
 ## Licenses
 
-- The programs written in bash-script and sed-script, as well as the metadata in JSON, are [unlicensed](http://unlicense.org/). They can be used and modified freely.
+- The programs written in bash-script, sed-script, and Perl, as well as the metadata in JSON, are [unlicensed](http://unlicense.org/). They can be used and modified freely.
 - The raw XML texts and the products of conversion done by the programs are licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/).

@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+inputlist=(d1 d2 d3 m1 m2 m3 s1 s2 s3 s4 s5)
+offsetlist=(0 13 23 0 50 100 0 11 21 34 44)
+headtaglist=(h3 h3 h3 h4 h4 h4 h3 h3 h3 h3 h3)
+PROGNAME=${0#./}
+VERSION="0.5.0"
+OUTPUT="suttainfo.json"
+
+function show_help {
+	echo ""
+	echo "   ${PROGNAME@U} v$VERSION, the Suttanta information generator"
+	echo "   https://github.com/bhaddacak/cst-kit"
+	echo ""
+	echo "   This program extracts sutta information from the three main Nikaya,"
+	echo "       then produces '$OUTPUT' as the result."
+	echo ""
+	echo "   Usage: $0 [--force]"
+	echo ""
+	echo "   Make sure you are running in a bash shell,"
+	echo "       together with GNU sed, perl and gzip installed."
+	echo ""
+	echo "   If '$OUTPUT' already exists, the program will not proceed,"
+	echo "       unless '--force' is used."
+	echo "   Otherwise, the file has to be removed or renamed first."
+	echo ""
+}
+if [ "$1" = "--force" ]; then
+	rm $OUTPUT
+elif [ -n "$1" ]; then
+	show_help
+	exit 0
+fi
+if [ -e $OUTPUT ]; then
+	show_help
+	exit 1
+fi
+for (( i=0; i<${#inputlist[@]}; i++ ))
+do
+	perl getsuttainfo.pl ${inputlist[$i]} ${offsetlist[$i]} ${headtaglist[$i]} >> $OUTPUT
+done
+sed -i '1i\
+[' $OUTPUT
+sed -i '$s/},/}/' $OUTPUT
+sed -i '$a\
+]' $OUTPUT
+echo "'$OUTPUT' generated"
