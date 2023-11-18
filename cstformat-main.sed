@@ -1,10 +1,10 @@
 /<body>/,/<\/body>/{
 s_<pb ed="." n=".\.[0-9]\+" />__g
 s_<note>\([^<]\+\)</note>_ [\1] _g
-s_<hi rend="bold">\([^<]\+\)</hi>_<b>\1</b>_g
 s_<hi rend="bold"></hi>__g
+s_<hi rend="bold">\([^<]\+\)</hi>_<b>\1</b>_g
 s_</b><b>__g
-s_<hi rend="paranum">\((\?[0-9-]\+)\?\)</hi>_\1_g
+s_<hi rend="paranum">\((\?[0-9:-]\+)\?\)</hi>_\1_g
 s_<hi rend="dot">.</hi>_. _g
 s_<p rend="\(nikaya\|book\)">\(.\+\)</p>_<h2>\2</h2>_g
 s_<p rend="chapter">\(.\+\)</p>_<h3>\1</h3>_g

@@ -4,7 +4,7 @@ s_<note>\([^<]\+\)</note>_ [\1] _g
 s_<hi rend="bold">\([^<]\+\)</hi>_\1_g
 s_<hi rend="bold"></hi>__g
 s_</b><b>__g
-s_<hi rend="paranum">\((\?[0-9-]\+)\?\)</hi>_\1_g
+s_<hi rend="paranum">\((\?[0-9:-]\+)\?\)</hi>_\1_g
 s_<hi rend="dot">.</hi>_. _g
 s_<p rend="\(nikaya\|book\)">\(.\+\)</p>_\2_g
 s_<p rend="chapter">\(.\+\)</p>_\1_g
