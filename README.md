@@ -388,23 +388,10 @@ Suttantapiṭaka
       |- Cariyāpiṭaka (Cp)
       |   |- Cariyāpiṭaka-aṭṭhakathā (Cp-a)
       |
-      |- Jātaka (Ja1)
+      |- Jātaka (Ja)
       |   |- Jātaka-aṭṭhakathā 1 (Ja-a1)
-      |
-      |- Jātaka (Ja2)
-      |   |- Jātaka-aṭṭhakathā 1 (Ja-a1)
-      |
-      |- Jātaka (Ja3)
-      |   |- Jātaka-aṭṭhakathā 1 (Ja-a3)
-      |
-      |- Jātaka (Ja4)
-      |   |- Jātaka-aṭṭhakathā 1 (Ja-a4)
-      |
-      |- Jātaka (Ja5)
-      |   |- Jātaka-aṭṭhakathā 1 (Ja-a5)
-      |
-      |- Jātaka (Ja6)
-      |   |- Jātaka-aṭṭhakathā 1 (Ja-a6)
+      |   |- Jātaka-aṭṭhakathā 2 (Ja-a2)
+      |   |- Jātaka-aṭṭhakathā 3 (Ja-a3)
       |
       |- Mahāniddesa (Nidd1)
       |   |- Mahāniddesa-aṭṭhakathā (Nidd-a1)
