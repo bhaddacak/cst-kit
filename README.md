@@ -13,7 +13,7 @@ This repository contains a restructured version of the Chaṭṭha Saṅgāyana 
 
 > Note that there is no textual editing in the raw data, except some heading insertions, number fixes, and typo fixes (if any). This means the text is mostly identical to the original, but the structure and naming scheme are different.
 
-To make the product versatile in uses, the program used for rendering the output is also exposed, so that those who have specific purposes can tinker the tool to fulfill their needs. This is the sense made by **Kit** here. The existing program has the following functions:
+To make the product versatile in uses, the program used for rendering the output is also exposed, so that those who have specific purposes can tinker the tool to fulfill their needs. This is the sense made by **Kit** here. The program has the following functions:
 
 - Converting original XML to fixed XML, HTML, headless HTML, and plain text
 - Removing references to publications embedded in the text
@@ -71,7 +71,7 @@ $ ./makecst xml
 
 Apart from the main program described above, there are also some small programs that can be useful somehow to developers.
 
-The first is the sutta information generator, `gensuttainfo`. This works on gz data of the three main nikāyas, i.e., D, M and S. It can extract the name and number of suttas (for D and M), or of saṃyuttas (for S), and the corresponding paragraph numbers. The output of this program is `suttainfo.json`. This information can be used to translate the references to the rough referring method, which identifies a sutta/saṃyutta by a number in its series. By this simple counting, we have DN 1-34, MN 1-152, and SN 1-56. This system can ease Western learners to some extent, but it is at odds and incompatible with the traditional way of arrangement.
+The first is the sutta information generator, `gensuttainfo`. This works on the gz data of the three main nikāyas, i.e., D, M and S. It can extract the name and number of suttas (for D and M), or of saṃyuttas (for S), and the corresponding paragraph numbers. The output of this program is `suttainfo.json`. This information can be used to translate the references to the rough referring method, which identifies a sutta/saṃyutta by a number in its series. By this simple counting, we have DN 1-34, MN 1-152, and SN 1-56. This system can ease Western learners to some extent, but it is at odds and incompatible with the traditional way of arrangement.
 
 If `suttainfo.json` is enough in uses, it is no need to run the program. But the users can generate the file themselves by entering the following command. This tool makes use of a Perl script. So, Perl also has to be present in the system.
 
@@ -129,10 +129,8 @@ CST (restructured)
  |   |- Aṭṭhakathā Ṭīkā ca (exegetical works)
  |
  |- Abhidhammapiṭakaṃ
- |   |- Mūlaganthā (main texts)
- |   |- Aṭṭhakathā Ṭīkā ca (exegetical works)
- |
- |- Visesapakaraṇāni (other texts)
+     |- Mūlaganthā (main texts)
+     |- Aṭṭhakathā Ṭīkā ca (exegetical works)
 
 ```
 
@@ -142,8 +140,6 @@ Another point that the new structure addresses is the name of texts for referenc
 
 To be precise, the structure of a book is shaped by textual content and paragraph numbers. Normally, if a new series of numbers is introduced, it will be separated as a new book. Only when the text has clearly distinct content, it will be a book on its own even if it uses numbers form another series. [Bhikkhunīvibhaṅga](https://bhaddacak.github.io/cst?biv) is a marked example in this case. However, in rare cases, one book may utilize multiple number series, for instance, Bhikkhupātimokkha and Bhikkhunīpātimokkha.
 
-The system of naming may not be well-settled yet because the collection is not completed. Also what will be included or excluded in other texts is yet to be decided.
-
 ### Internal structure
 
 To be familiar with the data, let us see briefly how CST XML data are structured. There are only 4 tags in use, namely **&lt;p&gt;**, **&lt;hi&gt;**, **&lt;note&gt;**, and **&lt;pb&gt;**. The &lt;p&gt; tag is extensively used in the body of text with a variety of format by using **rend** attribute. Here are the list of original &lt;p&gt; tag's rendering options: nikaya, book, chapter, title, subhead, subsubhead, bodytext, hangnum, indent, unindented, centre, gatha1, gatha2, gatha3, and gathalast.
@@ -152,7 +148,7 @@ The &lt;hi&gt; tag has less use. It mostly defines the boldface portion of text,
 
 Here are the treatments for the new structure:
 
-1. Three rendering options are added for &lt;p&gt;, i.e., **group**, **subgroup**, and **strong**. The first two are used to group headings together by not upsetting the hierarchical structure of headings (*group* is for *title*, *subgroup* is for *subhead*). To get what this means, see Pācittiya section in [Bhikkhuvibhaṅga 2](https://bhaddacak.github.io/cst?buv2). The last one just marks the part as a heading but not in the hierarchical structure. These three are incorporated into the text manually.
+1. Several rendering options are added for &lt;p&gt;, i.e., **part**, **endpart**, **group**, **endgroup**, **subgroup**, **endsubgroup**, and **strong**. The first three pairs are used to group headings together by not upsetting the hierarchical structure of headings (*part* is for *chapter*, *group* is for *title*, *subgroup* is for *subhead*). To get what this means, see Pācittiya section in [Bhikkhuvibhaṅga 2](https://bhaddacak.github.io/cst?buv2). In case group headings are contiguous within their parent, the 'end' part may be omitted. The last one just marks the part as a heading but not in the hierarchical structure. These are incorporated into the text manually.
 2. Because the hierarchical structure of headings in the original is unsystematic and inconsistent, using the data programmatically is difficult. So, the massive changes of headings have been done manually in this manner:
     - Only *nikaya* and *book* appear at the top of the file (or a little below), not in other places. These are rendered as &lt;h2&gt; in HTML/TXT output.
     - *Chapter* is the first level of the hierarchy. This means if the document has sections, *chapter* has to be present first to be the base for lower levels (*title*, *subhead*, and so on). This is rendered as &lt;h3&gt; in HTML/TXT output.
@@ -173,7 +169,7 @@ One marked characteristic of TXT output is paragraph numbers are only numbers ap
 
 ## The tree of text relationships
 
-Showing a tree-like structure of text relationships can give a quick picture and better understanding. So, the following diagrams are added here. This part also appears in [CST page](https://bhaddacak.github.io/cstpage). For some more information, including a referencing guide, please see that page.
+Showing a tree-like structure of text relationships can give a quick picture and better understanding. So, the following diagrams are added here. This part also appears in [CST page](https://bhaddacak.github.io/cstpage). For some more information, including all abbreviations and a referencing guide, please see that page.
 
 ```
 ============
@@ -410,7 +406,84 @@ Suttantapiṭaka
       |   |- Nettivibhāvinī (Nettv)
       |
       |- Peṭakopadesa (Ptkp)
+
+  ------------------------------------------
+  Independent Suttanta Exegeses/Compositions
+  ------------------------------------------
+      |- Visuddhimagga (Vism)
+          |- Visuddhimagga-mahāṭīkā (Vism-t)
+
+================
+Abhidhammapiṭaka
+================
+  |- Dhammasaṅgaṇī (Dhs)
+  |   |- Aṭṭhasālinī (As)
+  |       |- Dhammasaṅgaṇī-mūlaṭīkā (Dhs-t)
+  |           |- Dhammasaṅgaṇī-anuṭīkā (Dhs-at)
+  |
+  |- Vibhaṅga (Vbh)
+  |   |- Vibhaṅga-aṭṭhakathā (Vbh-a)
+  |       |- Vibhaṅga-mūlaṭīkā (Vbh-t)
+  |           |- Vibhaṅga-anuṭīkā (Vbh-at)
+  |
+  |- Dhātukathā (Dhk)
+  |   |- Dhātukathā-aṭṭhakathā (Dhk-a)
+  |       |- Dhātukathā-mūlaṭīkā (Dhk-t)
+  |           |- Dhātukathā-anuṭīkā (Dhk-at)
+  |
+  |- Puggalapaññatti (Pp)
+  |   |- Puggalapaññatti-aṭṭhakathā (Pp-a)
+  |       |- Puggalapaññatti-mūlaṭīkā (Pp-t)
+  |           |- Puggalapaññatti-anuṭīkā (Pp-at)
+  |
+  |- Kathāvatthu (Kv)
+  |   |- Kathāvatthu-aṭṭhakathā (Kv-a)
+  |       |- Kathāvatthu-mūlaṭīkā (Kv-t)
+  |           |- Kathāvatthu-anuṭīkā (Kv-at)
+  |
+  |- Yamaka (Ym)
+  |   |- Yamaka-aṭṭhakathā (Ym-a)
+  |       |- Yamaka-mūlaṭīkā (Ym-t)
+  |           |- Yamaka-anuṭīkā (Ym-at)
+  |
+  |- Paṭṭhāna 1 (Pt1)
+  |   |- Paṭṭhāna-aṭṭhakathā (Pt-a)
+  |       |- Paṭṭhāna-mūlaṭīkā (Pt-t)
+  |           |- Paṭṭhāna-anuṭīkā (Pt-at)
+  |
+  |- Paṭṭhāna 2 (Pt2)
+  |
+  |- Paṭṭhāna 3 (Pt3)
+
+  --------------------------------------------
+  Independent Abhidhamma Exegeses/Compositions
+  --------------------------------------------
+      |- Abhidhammāvatāra (Abhv)
+      |   |- Abhidhammāvatāra-purāṇaṭīkā (Abhv-pt)
+      |   |- Abhidhammāvatāra-abhinavaṭīkā (Abhv-nt)
+      |  
+      |- Abhidhammatthasaṅgaha (Abhs)
+      |   |- Abhidhammatthasaṅgaha-ṭīkā (Abhs-t)
+      |  
+      |- Abhidhammamātikā (Abhm)
+      |   |- Abhidhammamātikā-ṭīkā (Abhm-t)
+      |  
+      |- Nāmarūpapariccheda (Nrp)
+      |  
+      |- Paramatthavinicchaya (Prv)
+      |  
+      |- Saccasaṅkhepa (Scs)
 ```
+
+## Statistical summary
+
+From 2,698 fragmented files in the original CSCD collection, now we have only 203 files. Most of documents in the other group (Añña) are excluded, except Visuddhimagga. The numbers of files in each group are shown in the following table:
+
+|  | Vinaya | Suttanta | Abhidhamma | total |
+|:---|---:|---:|---:|---:|
+| main | 8 | 42 | 9 | 59 |
+| exegetical | 45 | 68 | 31 | 144 |
+| total | 53 | 110 | 40 | **203** |
 
 ## Notes on displaying the data
 
@@ -422,7 +495,7 @@ For HTML/TXT data, they can be shown in preferred styles by using CSS classes. O
 
 To all Buddhists and students of Pāli, this collection of texts is highly valuable. It should be made available, reliable, and systematically consistent. With this inauguration, the author hopes that the collection will be improved constantly, not kept untouched as a sacred artifact. The tidier structure we have, the more powerful tools we can create. With powerful tools, the learning will be more fruitful and enjoyable.
 
-So, the author encourages everyone who has capability (or a will to learn new and difficult things) study the collection and the tools provided, then make them even better.
+So, the author encourages everyone who has capability (or a will to learn new and difficult things) to study the collection and the tools provided, then make them even better.
 
 Typo data and other errors in texts can be sent directly to the author. Or if it is possible, the improvement can be done by *pull request* mechanism.
 

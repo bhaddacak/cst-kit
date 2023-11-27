@@ -11,12 +11,15 @@ s_<p rend="chapter">\(.\+\)</p>_\1_g
 s_<p rend="title">\(.\+\)</p>_\1_g
 s_<p rend="subhead">\(.\+\)</p>_\1_g
 s_<p rend="subsubhead">\(.\+\)</p>_\1_g
-s_<p rend="group">\(.\+\)</p>_\1_g
+s_<p rend="\(end\)\?part">\(.\+\)</p>_\2_g
+s_<p rend="\(end\)\?group">\(.\+\)</p>_\2_g
+s_<p rend="\(end\)\?subgroup">\(.\+\)</p>_\2_g
 s_<p rend="strong">\(.\+\)</p>_\1_g
 s_<p rend="centre">\(.\+\)</p>_\1_g
 s_<p rend="unindented">\(.\+\)</p>_\1_g
 s_<p rend="indent">\(.\+\)</p>_\1_g
 s_<p rend="gatha1">\(.\+\)</p>_\1_g
+s_<p rend="gatha1" n=".\+">\(.\+\)</p>_\1_g
 s_<p rend="gatha2">\(.\+\)</p>_\1_g
 s_<p rend="gatha3">\(.\+\)</p>_\1_g
 s_<p rend="gathalast">\(.\+\)</p>_\1_g

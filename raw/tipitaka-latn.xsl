@@ -83,14 +83,20 @@
 </p>
 </xsl:template>
 
-<xsl:template match='p[@rend="chapter"]'>
-<p class="chapter">
+<xsl:template match='p[@rend="part"]'>
+<p class="part">
 <xsl:apply-templates/>
 </p>
 </xsl:template>
 
-<xsl:template match='p[@rend="title"]'>
-<p class="title">
+<xsl:template match='p[@rend="endpart"]'>
+<p class="centered">
+<xsl:apply-templates/>
+</p>
+</xsl:template>
+
+<xsl:template match='p[@rend="chapter"]'>
+<p class="chapter">
 <xsl:apply-templates/>
 </p>
 </xsl:template>
@@ -101,8 +107,26 @@
 </p>
 </xsl:template>
 
+<xsl:template match='p[@rend="endgroup"]'>
+<p class="centered">
+<xsl:apply-templates/>
+</p>
+</xsl:template>
+
+<xsl:template match='p[@rend="title"]'>
+<p class="title">
+<xsl:apply-templates/>
+</p>
+</xsl:template>
+
 <xsl:template match='p[@rend="subgroup"]'>
 <p class="subgroup">
+<xsl:apply-templates/>
+</p>
+</xsl:template>
+
+<xsl:template match='p[@rend="endsubgroup"]'>
+<p class="centered">
 <xsl:apply-templates/>
 </p>
 </xsl:template>
