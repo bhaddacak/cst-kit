@@ -1,0 +1,73 @@
+#!/usr/bin/env bash
+
+VERSION="0.5"
+OUTDIR="cstat"
+target=""
+
+function show_help {
+	echo ""
+	echo "   CST character-stat generator v$VERSION"
+	echo "   https://github.com/bhaddacak/cst-kit"
+	echo "   (This program makes use of GNU sed and awk.)"
+	echo ""
+	echo "   Usage: ./gencharstat [-f <file>] [-v] [-h]"
+	echo ""
+	echo "   The program generates stat files in directory '$OUTDIR' using"
+	echo "       data in 'gz'."
+	echo ""
+	echo "   Options:"
+	echo "   -f"
+	echo "       Specify a <file> to be processed."
+	echo "       If a file is not given, the entire 'gz' directory will be processed."
+	echo "   -v"
+	echo "       Show the program's version."
+	echo "   -h"
+	echo "       Show this help."
+	echo ""
+}
+
+
+while [[ -n "$1" ]]; do 
+	case "$1" in 
+		-f)
+			shift 
+			target="$1"
+			;; 
+		-v | --version)
+			echo "CST character-stat generator v$VERSION"
+			exit
+			;;
+		-h | --help)
+			show_help 
+			exit 
+			;; 
+		*)
+			show_help >&2 
+			exit 1 
+			;; 
+	esac 
+	shift 
+done
+
+if [ -d "gz" ]; then
+	[ -d "$OUTDIR" ] || mkdir "$OUTDIR"
+else
+	show_help >&2 
+	exit 1
+fi
+
+function analyze {
+	file=`basename $1`
+	zcat $1 | sed 's/<\/\?[^>]\+>//g' | awk -f gencharstat.awk | sort > "$OUTDIR/$file.stat"
+}
+
+if [ -z "$target" ]; then
+	for file in gz/*.gz
+	do
+		echo "$file"
+		analyze "$file"
+	done
+elif [ -e "$target" ]; then
+	echo "$target"
+	analyze "$target"	
+fi

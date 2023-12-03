@@ -1,0 +1,115 @@
+#!/usr/bin/env bash
+
+VERSION="0.5"
+DIR="wstat"
+dumpfile="stat.txt"
+files="*.stat"
+group=""     # "" = all
+sortlen="0"  # 1 = true, 0 = false
+savemode="n" # y = true, n = false
+topnum="20"
+
+function show_help {
+	echo ""
+	echo "   CST word-stat analyzer v$VERSION"
+	echo "   https://github.com/bhaddacak/cst-kit"
+	echo "   (This program makes use of GNU sed and gawk.)"
+	echo ""
+	echo "   Usage: ./showwordstat [-t <text-group>] [-l] [-n <num>] [-s] [-v] [-h]"
+	echo ""
+	echo "   Before running this program stat data have to be present"
+	echo "       in directory '$DIR'. If not, run this first:"
+	echo ""
+	echo "          ./genwordstat"
+	echo ""
+	echo "   Options:"
+	echo "   -t <text-group>"
+	echo "       Specify text group."
+	echo "       If <text-group> is omitted the entire '$DIR' will be processed."
+	echo "       Available <text-group> are:"
+	echo "          v  - The whole Vinaya"
+	echo "          vm - The main texts in Vinaya"
+	echo "          ve - The exegetical texts in Vinaya"
+	echo "          s  - The whole Suttanta"
+	echo "          sm - The main texts in Suttanta"
+	echo "          se - The exegetical texts in Suttanta"
+	echo "          a  - The whole Abhidhamma"
+	echo "          am - The main texts in Abhidhamma"
+	echo "          ae - The exegetical texts in Abhidhamma"
+	echo "          m  - All main texts"
+	echo "          e  - All exegetical texts"
+	echo "   -l"
+	echo "       Sort output by term length, instead of frequency."
+	echo "   -n"
+	echo "       Show top <num> terms in the summary, default = 20."
+	echo "   -s"
+	echo "       Save output to file 'x-stat.txt',"
+	echo "       where x is the corresponding <text-group> or 'all'."
+	echo "   -v"
+	echo "       Show the program's version."
+	echo "   -h"
+	echo "       Show this help."
+	echo ""
+}
+
+while [[ -n "$1" ]]; do 
+	case "$1" in 
+		-t)
+			shift 
+			group="$1"
+			;; 
+		-l)
+			sortlen="1"
+			;; 
+		-n)
+			shift 
+			topnum="$1"
+			;; 
+		-s)
+			savemode="y"
+			;; 
+		-v | --version)
+			echo "CST word-stat analyzer v$VERSION"
+			exit
+			;;
+		-h | --help)
+			show_help 
+			exit 
+			;; 
+		*)
+			show_help >&2 
+			exit 1 
+			;; 
+	esac 
+	shift 
+done
+
+if [ -d "$DIR" ]; then
+	case "$group" in
+		v | s | a)
+			files="cst-$group*.stat"
+			;;
+		vm | ve | sm | se | am | ae)
+			files="cst-$group-*.stat"
+			;;
+		m | e)
+			files="cst-?$group-*.stat"
+			;;
+		*)
+			files="*.stat"
+			;;
+	esac
+	if [ "$savemode" = "y" ]; then
+		if [ -n "$group" ]; then
+			dumpfile="$group-$dumpfile"
+		else 
+			dumpfile="all-$dumpfile"
+		fi
+		gawk -v sortlen="$sortlen" -v dump="1" -f wordstat.awk $DIR/$files > "$dumpfile"
+		echo "$dumpfile generated"
+	else
+		gawk -v sortlen="$sortlen" -v topnum="$topnum" -f wordstat.awk $DIR/$files
+	fi
+else
+	show_help
+fi
