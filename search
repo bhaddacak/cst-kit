@@ -1,0 +1,107 @@
+#!/usr/bin/env bash
+
+VERSION="0.5"
+index_file=""
+info_file="cst-all.info"
+query=""
+filter=""
+maxresult="20"
+
+function show_help {
+	echo ""
+	echo "   CST search v$VERSION"
+	echo "   https://github.com/bhaddacak/cst-kit"
+	echo "   (This program makes use of GNU sed and gawk.)"
+	echo ""
+	echo "   Usage: ./search -q '<query>' [-i <index>] [-o <filter>] [-n <max-num>] [-v] [-h]"
+	echo ""
+	echo "   Options:"
+	echo "   -q '<query>'"
+	echo "       Specify a query to search. The query can be multiple terms,"
+	echo "          and RegExp search within gawk's capability is possible"
+	echo "          (with some limitations on the use of escape sequences)."
+	echo "       Vethuis-like input is accepted as follows:"
+	echo "          =a ā      =i ī      =u ū      ;n ṅ      ~n ñ"
+	echo "          ,t ṭ      ,d ḍ      ,n ṇ      ,l ḷ      ,m ṃ"
+	echo "       (Note: To avoid conflicts, RegExp metacharacters are not used)"
+	echo "   -i <index>"
+	echo "       Specify the index to use, once it was created upon a text group."
+	echo "       If this is omitted, the entire collection will be searched."
+	echo "       Available <index> are:"
+	echo "          v  - The whole Vinaya"
+	echo "          vm - The main texts in Vinaya"
+	echo "          ve - The exegetical texts in Vinaya"
+	echo "          s  - The whole Suttanta"
+	echo "          sm - The main texts in Suttanta"
+	echo "          se - The exegetical texts in Suttanta"
+	echo "          a  - The whole Abhidhamma"
+	echo "          am - The main texts in Abhidhamma"
+	echo "          ae - The exegetical texts in Abhidhamma"
+	echo "          m  - All main texts"
+	echo "          e  - All exegetical texts"
+	echo "   -o <filter>"
+	echo "       Show output only text group that matches <filter>."
+	echo "       The <filter> can be one in the list above."
+	echo "   -n <max-num>"
+	echo "       Specify maximum result to show, default = 20."
+	echo "   -v"
+	echo "       Show the program's version."
+	echo "   -h"
+	echo "       Show this help."
+	echo ""
+}
+
+function process_input {
+	query=$(printf "$1\n" | sed 's/=a/ā/g;s/=i/ī/g;s/=u/ū/g;s/;n/ṅ/g;s/~n/ñ/g;s/,t/ṭ/g;s/,d/ḍ/g;s/,n/ṇ/g;s/,l/ḷ/g;s/,m/ṃ/g;s/=A/Ā/g;s/=I/Ī/g;s/=U/Ū/g;s/;N/Ṅ/g;s/~N/Ñ/g;s/,T/Ṭ/g;s/,D/Ḍ/g;s/,N/Ṇ/g;s/,L/Ḷ/g;s/,M/Ṃ/g')
+}
+
+while [[ -n "$1" ]]; do 
+	case "$1" in 
+		-q)
+			shift 
+			process_input "$1"
+			;; 
+		-i)
+			shift 
+			index_file=$(ls cst-$1_*.index 2> /dev/null | head -n1)
+			info_file="cst-$1.info"
+			;; 
+		-o)
+			shift 
+			filter="$1"
+			;; 
+		-n)
+			shift 
+			maxresult="$1"
+			;; 
+		-v | --version)
+			echo "CST search v$VERSION"
+			exit
+			;;
+		-h | --help)
+			show_help 
+			exit 
+			;; 
+		*)
+			show_help >&2 
+			exit 1 
+			;; 
+	esac 
+	shift 
+done
+
+if [ -z "$query" ]; then
+	echo "Please enter a term to search, using -q <query>"
+	exit 1
+else
+	if [ -z "$index_file" ]; then
+		index_file=$(ls cst-all_*.index 2> /dev/null | head -n1)
+	fi
+	if [ -e "$index_file" ]; then
+		totaldoc=${index_file/#*_/}
+		totaldoc=${totaldoc%.index}
+		gawk -v query="$query" -v filter="$filter" -v maxresult="$maxresult" -v totaldoc="$totaldoc" -v infofile="$info_file" -f search.awk "$index_file"
+	else
+		echo "Index file not found"
+	fi
+fi

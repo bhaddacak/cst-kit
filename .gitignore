@@ -4,3 +4,5 @@ txt/
 bare/
 cstat/
 wstat/
+*.index
+*.info

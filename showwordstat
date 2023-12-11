@@ -25,7 +25,7 @@ function show_help {
 	echo "   Options:"
 	echo "   -t <text-group>"
 	echo "       Specify text group."
-	echo "       If <text-group> is omitted the entire '$DIR' will be processed."
+	echo "       If <text-group> is omitted, the entire '$DIR' will be processed."
 	echo "       Available <text-group> are:"
 	echo "          v  - The whole Vinaya"
 	echo "          vm - The main texts in Vinaya"
@@ -106,7 +106,7 @@ if [ -d "$DIR" ]; then
 			dumpfile="all-$dumpfile"
 		fi
 		gawk -v sortlen="$sortlen" -v dump="1" -f wordstat.awk $DIR/$files > "$dumpfile"
-		echo "$dumpfile generated"
+		echo "'$dumpfile' generated"
 	else
 		gawk -v sortlen="$sortlen" -v topnum="$topnum" -f wordstat.awk $DIR/$files
 	fi

@@ -1,22 +1,24 @@
 #!/usr/bin/env bash
 
 VERSION="0.5"
-DIR="cstat"
+DIR="wstat"
 files="*.stat"
-group=""
+group=""     # "" = all
+index_file="cst-all"
+info_file="cst-all"
 
 function show_help {
 	echo ""
-	echo "   CST character-stat analyzer v$VERSION"
+	echo "   CST index generator v$VERSION"
 	echo "   https://github.com/bhaddacak/cst-kit"
 	echo "   (This program makes use of GNU sed and gawk.)"
 	echo ""
-	echo "   Usage: ./showcharstat [-t <text-group>] [-v] [-h]"
+	echo "   Usage: ./genindex [-t <text-group>] [-v] [-h]"
 	echo ""
 	echo "   Before running this program stat data have to be present"
 	echo "       in directory '$DIR'. If not, run this first:"
 	echo ""
-	echo "          ./gencharstat"
+	echo "          ./genwordstat"
 	echo ""
 	echo "   Options:"
 	echo "   -t <text-group>"
@@ -48,7 +50,7 @@ while [[ -n "$1" ]]; do
 			group="$1"
 			;; 
 		-v | --version)
-			echo "CST character-stat analyzer v$VERSION"
+			echo "CST index generator v$VERSION"
 			exit
 			;;
 		-h | --help)
@@ -78,7 +80,20 @@ if [ -d "$DIR" ]; then
 			files="*.stat"
 			;;
 	esac
-	gawk -f charstat.awk $DIR/$files | sort -nr -k2 -t$'\t'
+	if [ -n "$group" ]; then
+		index_file="cst-$group"
+		info_file="cst-$group"
+	fi
+	totaldoc=$(ls $DIR/$files | wc -l)
+	echo "Generating document info"
+	info_file="${info_file}.info"
+	gawk -v group="$group" -f geninfo.awk cstinfo.json > "$info_file"
+	echo "'$info_file' created"
+	echo "Generating index over $totaldoc documents"
+	echo "... (This may take some minutes for the whole collection)"
+	index_file="${index_file}_$totaldoc.index"
+	gawk -v group="$group" -f genindex.awk $DIR/$files > "$index_file"
+	echo "'$index_file' created"
 else
 	show_help
 fi

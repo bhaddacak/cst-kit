@@ -117,6 +117,49 @@ $ ./showwordstat -l
 
 See some output from word-stat in *Statistical summary* below. For more information on use see the program's help, `./showwordstat -h`.
 
+## Search tools
+
+When the word-stat is available, it is possible to make a search program. Here, a simple search tool is implemented, just using basic Unix/Linux tools. Before applying a search, an index file (technically called 'inverted file') has to be created first. To make the index of the whole collection, use the following command.
+
+```
+$ ./genindex
+```
+
+This can take some minutes. When created, the overall index file is around 30 MB in size, plus a document-info file. If a more specific text group is needed, you can use `-t` option, for example `./genindex -t vm` (indexing only the main Vinaya). For more information, see `./genindex -h`.
+
+Once an index file has been generated, we can issue a search command with the compulsory `-q` option, like the example below.
+
+```
+$ ./search -q "dhammacakka"
+```
+
+By default, the search uses the index of the whole collection. We can use a specific index by `-i` option, for example `./search -q "dhammacakka" -i vm` (searching in the main Vinaya index).
+
+With a larger index file, we can filter the output by showing only the group we need using `-o` option, like this example.
+
+```
+$ ./search -q "dhammacakka" -o vm
+```
+
+This search uses the overall index, but shows only the result from the main Vinaya.
+
+There are some other options you can see further by `./search -h`. For some Pāli characters, you can use Vethuis-like input as follows:
+
+```
+=a ā      =i ī      =u ū      ;n ṅ      ~n ñ
+,t ṭ      ,d ḍ      ,n ṇ      ,l ḷ      ,m ṃ
+```
+
+To avoid a clash with regular expressions, metacharacters are not used here. And this means you can search with regular expressions (with some limitations on the use of escape sequences). For example, searching the whole word of 'adhiṭṭhānā' or 'adhiṭṭhānaṃ' can be put in this way.
+
+```
+$ ./search -q "^adhi,t+h=an(=a|a,m)$"
+```
+
+Note that when RegExp metacharacters are used, always put the query in quotes. And if multiple terms are searched, the quotes (either single or double) are mandatory.
+
+> For the technical details of the implementation, you may need some knowledge of Information Storage and Retrieval, particularly on the Vector Space Model and TF-IDF. A suggested reading is David A. Grossman and Ophir Frieder, 2004, *Information Retrieval: Algorithms and Heuristics*, 2nd Edition, Springer. A good example is in pp. 15-18.
+
 ## Other tools
 
 Apart from the main programs described above, there are also some small programs that can be useful somehow to developers.
