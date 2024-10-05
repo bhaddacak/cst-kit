@@ -1803,7 +1803,7 @@
   "cscdclass": "mul",
   "cscdfile": [ "s0510m1.mul0", "s0510m1.mul1", "s0510m1.mul2", "s0510m1.mul3", "s0510m1.mul4", "s0510m1.mul5", "s0510m1.mul6", "s0510m1.mul7", "s0510m1.mul8", "s0510m1.mul9", "s0510m1.mul10", "s0510m1.mul11", "s0510m1.mul12", "s0510m1.mul13", "s0510m1.mul14", "s0510m1.mul15", "s0510m1.mul16", "s0510m1.mul17", "s0510m1.mul18", "s0510m1.mul19", "s0510m1.mul20", "s0510m1.mul21", "s0510m1.mul22", "s0510m1.mul23", "s0510m1.mul24", "s0510m1.mul25", "s0510m1.mul26", "s0510m1.mul27", "s0510m1.mul28", "s0510m1.mul29", "s0510m1.mul30", "s0510m1.mul31", "s0510m1.mul32", "s0510m1.mul33", "s0510m1.mul34", "s0510m1.mul35", "s0510m1.mul36", "s0510m1.mul37", "s0510m1.mul38", "s0510m1.mul39", "s0510m1.mul40", "s0510m1.mul41", "s0510m2.mul0", "s0510m2.mul1", "s0510m2.mul2", "s0510m2.mul3", "s0510m2.mul4", "s0510m2.mul5", "s0510m2.mul6", "s0510m2.mul7", "s0510m2.mul8", "s0510m2.mul9", "s0510m2.mul10", "s0510m2.mul11", "s0510m2.mul12", "s0510m2.mul13" ],
   "description": "The Apadānas spoken by monks",
-  "commentary": [ "ap-a1" ],
+  "commentary": [ "ap1-a" ],
   "linkable": true
  },
  "ap2": {
@@ -1819,10 +1819,10 @@
   "commentary": [  ],
   "linkable": false
  },
- "ap-a1": {
+ "ap1-a": {
   "group": "sut",
   "docclass": "exe",
-  "ref": "ap-a1",
+  "ref": "ap1-a",
   "file": "cst-se-apa1",
   "name": "Therāpadāna-aṭṭhakathā",
   "altname": [ "Visuddhajanavilāsinī", "Apadāna-aṭṭhakathā 1" ],
@@ -1946,7 +1946,7 @@
   "cscdclass": "mul",
   "cscdfile": [ "s0515m.mul0", "s0515m.mul1", "s0515m.mul2", "s0515m.mul3", "s0515m.mul4", "s0515m.mul5", "s0515m.mul6", "s0515m.mul7", "s0515m.mul8", "s0515m.mul9", "s0515m.mul10", "s0515m.mul11", "s0515m.mul12", "s0515m.mul13", "s0515m.mul14", "s0515m.mul15" ],
   "description": "The great explanations",
-  "commentary": [ "nidd-a1" ],
+  "commentary": [ "nidd1-a" ],
   "linkable": true
  },
  "nidd2": {
@@ -1959,13 +1959,13 @@
   "cscdclass": "mul",
   "cscdfile": [ "s0516m.mul0", "s0516m.mul1", "s0516m.mul2" ],
   "description": "The small explanations",
-  "commentary": [ "nidd-a2" ],
+  "commentary": [ "nidd2-a" ],
   "linkable": true
  },
- "nidd-a1": {
+ "nidd1-a": {
   "group": "sut",
   "docclass": "exe",
-  "ref": "nidd-a1",
+  "ref": "nidd1-a",
   "file": "cst-se-nidda1",
   "name": "Mahāniddesa-aṭṭhakathā",
   "altname": [ "Saddhammappajjotikā" ],
@@ -1975,10 +1975,10 @@
   "commentary": [  ],
   "linkable": false
  },
- "nidd-a2": {
+ "nidd2-a": {
   "group": "sut",
   "docclass": "exe",
-  "ref": "nidd-a2",
+  "ref": "nidd2-a",
   "file": "cst-se-nidda2",
   "name": "Cūḷaniddesa-aṭṭhakathā",
   "altname": [ "Saddhammappajjotikā" ],
@@ -2612,11 +2612,11 @@
   "commentary": [  ],
   "linkable": false
  },
- "prv": {
+ "pmv": {
   "group": "abh",
   "docclass": "exe",
-  "ref": "prv",
-  "file": "cst-ae-prv",
+  "ref": "pmv",
+  "file": "cst-ae-pmv",
   "name": "Paramatthavinicchaya",
   "altname": [  ],
   "cscdclass": "tik",

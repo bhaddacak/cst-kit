@@ -6,3 +6,4 @@ cstat/
 wstat/
 *.index
 *.info
+*.log

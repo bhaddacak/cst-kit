@@ -467,7 +467,7 @@ Suttantapiṭaka
       |   |- Therīgāthā-aṭṭhakathā (Thig-a)
       |
       |- Therāpadāna (Ap1)
-      |   |- Therāpadāna-aṭṭhakathā (Ap-a1)
+      |   |- Therāpadāna-aṭṭhakathā (Ap1-a)
       |
       |- Therīapadāna (Ap2)
       |
@@ -483,10 +483,10 @@ Suttantapiṭaka
       |   |- Jātaka-aṭṭhakathā 3 (Ja-a3)
       |
       |- Mahāniddesa (Nidd1)
-      |   |- Mahāniddesa-aṭṭhakathā (Nidd-a1)
+      |   |- Mahāniddesa-aṭṭhakathā (Nidd1-a)
       |
       |- Cūḷaniddesa (Nidd2)
-      |   |- Cūḷaniddesa-aṭṭhakathā (Nidd-a2)
+      |   |- Cūḷaniddesa-aṭṭhakathā (Nidd2-a)
       |
       |- Paṭisambhidāmagga (Psm)
       |   |- Paṭisambhidāmagga-aṭṭhakathā (Psm-a)
@@ -563,7 +563,7 @@ Abhidhammapiṭaka
       |  
       |- Nāmarūpapariccheda (Nrp)
       |  
-      |- Paramatthavinicchaya (Prv)
+      |- Paramatthavinicchaya (Pmv)
       |  
       |- Saccasaṅkhepa (Scs)
 ```
