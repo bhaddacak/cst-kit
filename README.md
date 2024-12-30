@@ -657,6 +657,10 @@ For XML data, they can be shown in a browser using XSL transformation. The origi
 
 For HTML/TXT data, they can be shown in preferred styles by using CSS classes. Or they can be modified by text manipulation using regular expressions. The reader in [bhaddacak.github.io/cst](https://bhaddacak.github.io/cst) uses the latter method.
 
+## Notes on textual corrections
+
+The collection has undergone textual corrections after [Tipitaka.org XML](https://github.com/vipassanatech/tipitaka-xml) plus additional treatments from the author. Now the texts have less errors, both in the website and in the Pāli Platform 3's bundle. The report can be seen at [Tipiṭaka Correction Report](https://bhaddacak.github.io/correport).
+
 ## Notes on further developments
 
 To all Buddhists and students of Pāli, this collection of texts is highly valuable. It should be made available, reliable, and systematically consistent. With this inauguration, the author hopes that the collection will be improved constantly, not kept untouched as a sacred artifact. The tidier structure we have, the more powerful tools we can create. With powerful tools, the learning will be more fruitful and enjoyable.
